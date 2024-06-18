@@ -110,7 +110,7 @@ class Ytmp3:
         #Delete mp4 file
         os.remove(fileName)
 
-    def stich_audio_video(self, audio, video, output):
+    def stitch_audio_video(self, audio, video, output):
         #Construct ffmpeg command
         command = ('ffmpeg/ffmpeg.exe -y -loglevel quiet -i "'+audio+'" -i "'+video+'" "'+output+'"')
         #run ffmpeg
@@ -145,7 +145,7 @@ class Ytmp3:
         #attempt download
         try:
             fileName = self.get_file_name(Stream.download())
-            #doing this to preserve the original file name for stiching
+            #doing this to preserve the original file name for stitching
             fileNameAudio = fileName
 
         except:
@@ -187,10 +187,10 @@ class Ytmp3:
             #need to rename it also
             fileNameVideo = self.addPrefix(fileNameVideo, "vid")
 
-            self.statusMessage = "Stiching.."
+            self.statusMessage = "stitching.."
             self.print_status()
-            #Stich video and audio together
-            self.stich_audio_video(fileNameAudio, fileNameVideo, fileName)
+            #stitch video and audio together
+            self.stitch_audio_video(fileNameAudio, fileNameVideo, fileName)
 
             #updating status
             self.statusMessage = ("Done")
