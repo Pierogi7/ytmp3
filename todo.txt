@@ -1,0 +1,11 @@
+
+-TODO-
+
+Features:
+implement linux support
+implement multithreadding to download multiple videos simultaneously
+implement download destination selector
+implement oauth
+
+Fixes:
+improve video stiching speed
