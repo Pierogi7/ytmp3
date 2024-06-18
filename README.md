@@ -1,8 +1,5 @@
 # YouTube to mp3
 
-
-## Download video/audio from YouTube with ease
-
 This is a simple project written in Python, it uses Pytube and ffmpeg
 to download from YouTube.
 
