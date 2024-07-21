@@ -1,3 +1,6 @@
+Pytube is no longer supported, therefore this no longer works. rip
+
+
 # YouTube to mp3
 
 This is a simple project written in Python, it uses Pytube and ffmpeg
